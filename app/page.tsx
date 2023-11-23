@@ -1,14 +1,23 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import ProductCard from './components/ProductCard'
 
-export default function Home() {
+import Feed from "@/components/Feed"
+
+const Home = () => {
   return (
-   <main>
-    <h1> Hello World</h1>
-    <Link href='/users'>Users</Link>
-    <ProductCard/>
-   </main>
-
+   
+     <section className="w-full flex-center flex-col">
+        <h1 className="head_text text-center">
+            Discover & Share
+        <br className="max-md:hidden" /> <br/>
+        <span className="orange_gradient text-center"> AI-powered prompts</span>
+        </h1>
+        <p className="desc text-center">
+            open-source AI prompting tool bla la bla bla bla 
+            labla labla huaha uhah thiuahtg
+        </p>
+        <Feed/>
+     </section>
+   
   )
 }
+
+export default Home
